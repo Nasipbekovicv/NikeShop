@@ -1,0 +1,236 @@
+.controlsHomeTextOne {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 15px;
+    padding: 60px 0;
+}
+
+.controlsHomeTextOne h1 {
+    font-size: 64px;
+    font-weight: 800;
+}
+
+.controlsHomeTextOne p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.controlHomeDataCartOverflow div h1 {
+    padding: 80px 0;
+    font-size: 64px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+}
+
+.controlsHomeTextOne button {
+    padding: 20px 20px;
+    font-size: 22px;
+}
+
+.controlHomeDataCart {
+    display: flex;
+    column-gap: 105px;
+    overflow: auto;
+}
+
+.controlHomeDataCart::-webkit-scrollbar {
+    width: 0;
+}
+
+.homeDataCart {
+    background: rgb(199, 196, 196);
+    width: 410px;
+    height: 500px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+}
+
+.homeDataCart:hover {
+    background: rgb(137, 137, 137);
+    width: 410px;
+    height: 500px;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 1px 2px 22px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 1px 2px 22px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 1px 2px 22px -6px rgba(0, 0, 0, 0.75);
+    transition: 0.5s;
+}
+
+.homeDataCart h4 {
+    padding: 30px 0 0 0;
+    font-size: 24px;
+    font-weight: 300;
+}
+
+.twoBlockImgHome {
+    display: flex;
+    column-gap: 15px;
+}
+
+.oneImgOneBlockTwo {
+    position: relative;
+}
+
+.imgBlockThree {
+    width: 690px;
+}
+
+.twoBlockImgHomeText {
+    position: absolute;
+    bottom: 50px;
+    left: 20px;
+}
+
+.twoBlockImgHomeText p {
+    font-size: 18px;
+    font-weight: 300;
+    padding-bottom: 10px;
+}
+
+.twoBlockImgHomeText h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 5px 0 25px 0;
+}
+
+.twoBlockImgHomeText button {
+    font-size: 22px;
+    padding: 20px 20px;
+}
+
+.twoBlockImgHomeTextTwo button {
+    font-size: 22px;
+    padding: 20px 20px;
+}
+
+.oneImgTwoBlockTwo {
+    position: relative;
+}
+
+.twoBlockImgHomeTextTwo {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+}
+
+.twoBlockImgHomeTextTwo h3 {
+    font-size: 30px;
+    font-weight: 400;
+    padding: 0 0 25px 0;
+}
+
+.imgCoverNikeHome {
+    width: 1395.1px;
+}
+
+.coverBlockImg {
+    position: relative;
+}
+
+.imgCoverNikeHomeText {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+}
+
+.imgCoverNikeHomeText h1 {
+    font-size: 72px;
+    padding-bottom: 10px;
+}
+
+.imgCoverNikeHomeText p {
+    font-size: 22px;
+    padding-bottom: 20px;
+}
+
+.imgCoverNikeHomeBtn {
+    display: flex;
+    column-gap: 40px;
+}
+
+.imgCoverNikeHomeBtn button {
+    font-size: 22px;
+    padding: 20px 20px;
+}
+
+.BlockEndHome {
+    display: flex;
+    column-gap: 22.5px;
+    padding-top: 40px;
+}
+
+.ImgBlockEnd {
+    width: 450px;
+}
+
+.textBlockImgBlockEndBlockOne {
+    position: relative;
+}
+
+.textBlockImgBlockEndOne {
+    position: absolute;
+    bottom: 50px;
+}
+
+.textBlockImgBlockEndOne p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.textBlockImgBlockEndOne h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.textBlockImgBlockEndBlockTwo {
+    position: relative;
+}
+
+.textBlockImgBlockEndTwo {
+    position: absolute;
+    bottom: 50px;
+}
+
+.textBlockImgBlockEndTwo p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.textBlockImgBlockEndTwo h3 {
+    font-size: 28px;
+    font-weight: 500;
+}
+
+.textBlockImgBlockEndBlockTre {
+    position: relative;
+}
+
+.textBlockImgBlockEndTre {
+    position: absolute;
+    bottom: 50px;
+}
+
+.textBlockImgBlockEndTre p {
+    font-size: 16px;
+    padding: 10px 0;
+}
+
+.textBlockImgBlockEndTre h3 {
+    font-size: 28px;
+    font-weight: 500;
+    padding: 0px 0 35px 0;
+}

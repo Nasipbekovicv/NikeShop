@@ -1,0 +1,30 @@
+
+
+
+
+/*                           Layout                               */
+.headerControl{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* background: rgb(0, 128, 255); */
+  height: 50px;
+  padding: 30px 0;
+}
+
+.Logo{
+  font-size: 32px;
+  font-weight: 800;
+}
+
+.controlLink{
+  display: flex;
+  align-items: center;
+  column-gap: 30px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.controlLink a{
+  color: black;
+}
