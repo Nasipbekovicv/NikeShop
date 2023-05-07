@@ -1,6 +1,4 @@
-const HoodiesSweatshirts = [
-
-    {
+const HoodiesSweatshirts = [{
         id: 51,
         name: 'Nike Sportswear Tech Fleece',
         title: 'Mens Full-Zip Hoodie',
@@ -148,7 +146,7 @@ const HoodiesSweatshirts = [
         name: 'Nike Solo Swoosh',
         title: 'Nike Solo Swoosh',
         price: 100,
-        img: 'https://www.nike.com/149e9513-01fa-4fb0-aad4-566afd725d1b/2d206a39-8ed7-437e-a3be-862e0f06eea3/p.js',
+        img: 'https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/38be7458-9d5a-4ce8-bec4-f72297f8076a/solo-swoosh-mens-fleece-pullover-hoodie-qnqWb8.png',
         description: 'Celebrate the power and simplicity of the Swoosh. This warm, brushed fleece hoodie is made with some extra room through the shoulders, chest and body for easy comfort and laid-back, nostalgic style. Thick, stretchy ribbing at the cuffs and hem help hold the hoodie in place when you move and seal in your warmth when conditions cool. Our Solo Swoosh is embroidered on the left chest to keep your look clean and effortless.',
         size: ' XS, S, M, L, XL, 2XL, 3XL',
     },

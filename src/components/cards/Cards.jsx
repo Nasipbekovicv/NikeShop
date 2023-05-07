@@ -1,41 +1,45 @@
-import "./Card.css";
-import { useNavigate } from "react-router";
 import { Card } from 'antd';
+import { useDispatch } from "react-redux";
+import { useNavigate } from "react-router";
+import Buttons from "../button/Buttons";
+import "./Cards.css";
+
+import { actions } from '../../redux/search/SearchSlice';
 
 const Cards = props => {
    const { Meta } = Card;
    const navigation = useNavigate();
 
-   return (
-      <div className="CartSize">
-         <div className="CardBatya">
-         <Card
-    hoverable
-    style={{
-      width: 240,
-    }}
-    cover={<img alt="example" src="https://os.alipayobjects.com/rmsportal/QBnOOoLaAfKPirc.png" />}
-  >
-    <Meta title="Europe Street beat" description="www.instagram.com" />
-  </Card>
-            <div className="CartControl">
+   const dispatch = useDispatch()
 
-               <div  key={props.items.id}>
-                  <div
-                     onClick={() => navigation(`/mini-cards/${props.productsId}`)}>
-                     <div>
-                        <img className="imgCards" src={props.items.img} alt="" />
-                     </div>
-                     <div>
-                        <h3>{props.items.name}</h3>
-                        <p>{props.items.title}</p>
-                        <p> ${props.items.price} </p>
-                     </div>
-                  </div>
+   const goDetailPage = (id) => {
+      navigation(`/mini-cards/${id}`)
+      dispatch(actions.clearItem2())
+   }
+
+
+   return (
+      <div>
+         <Card
+            onClick={() =>goDetailPage(props.productsId) }
+            hoverable
+            style={{
+               width: 350,
+            }}
+            cover={<img className="imgCards" alt="example" src={props.items.img} />}
+         >
+            <div style={{height:145, display:'flex', flexDirection:'column', justifyContent:'space-between'}}>
+               <div>
+            <h3 className="textCardsName">{props.items.name}</h3>
+            <Meta className="textCardsTitle" description={props.items.title} />
+               </div>
+               <div>
+            <Buttons className="textCardsPrice" title={`$ ${props.items.price}`} />
                </div>
             </div>
-         </div>
+         </Card>
       </div>
+
    );
 };
 

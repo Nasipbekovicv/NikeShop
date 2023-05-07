@@ -1,0 +1,30 @@
+.controlShowSearch {
+    position: relative;
+    z-index: 1000;
+}
+
+.ControlShowBlock {
+    width: 1440px;
+    height: 400px;
+    background: rgb(218, 222, 222);
+    position: absolute;
+    top: 50px;
+    box-shadow: 0px 8px 17px -9px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 8px 17px -9px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 8px 17px -9px rgba(0, 0, 0, 0.75);
+}
+
+.controlShopCartSearch {
+    display: flex;
+    column-gap: 40px;
+    position: absolute;
+    z-index: 11;
+    right: 50px;
+    top: 50px;
+    width: 900px;
+    overflow: auto;
+}
+
+.controlShopCartSearch::-webkit-scrollbar {
+    width: 0;
+}

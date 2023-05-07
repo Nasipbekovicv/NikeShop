@@ -1,0 +1,94 @@
+.CartBuy {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-between; */
+    padding-top: 100px;
+}
+
+.ControlBlockImgCartBuy {
+    width: 1000px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ControlBlockImgCartBuy img {
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ControlBlockTextCartBuy {
+    width: 440px;
+    position: relative;
+    /* height: 600px; */
+    /* display: flex;
+    flex-direction: column;
+    justify-content: space-between; */
+}
+
+.ControlBlockTextCartBuyName {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.ControlBlockTextCartBuyTitle {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 5px 0 50px 0;
+}
+
+.ControlBlockTextCartBuyPrice {
+    font-size: 24px;
+    font-weight: 600;
+    padding: 10px 0 1px 0;
+    margin-left: 20px;
+}
+
+.ControlBlockTextCartBuySize {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 10px 0 10px 0;
+}
+
+.ControlBlockTextCartBuyDescription {
+    width: 405px;
+    font-size: 16px;
+    font-weight: 500;
+    padding: 15px 0 15px 0;
+}
+
+.ControlBlockTextCartBuyBtnBuyBlock {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+}
+
+.ControlBlockTextCartBuyBtnBuy {
+    font-size: 22px;
+    border-radius: 20px;
+    width: 160px;
+    border-color: none;
+    background: rgb(98, 97, 97);
+    height: 50px;
+    margin-left: 20px;
+}
+
+.blockFixed {
+    position: absolute;
+    left: 130px;
+    top: 0;
+    background: rgb(217, 217, 217);
+    width: 200px;
+    height: 110px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 2px 20px -6px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 2px 20px -6px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 20px -6px rgba(0, 0, 0, 0.5);
+}

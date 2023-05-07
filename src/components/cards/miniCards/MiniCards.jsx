@@ -1,6 +1,9 @@
+import './MiniCards.css'
 import { useParams } from "react-router-dom";
-import { useSelector } from "react-redux";
+import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
+import Buttons from '../../button/Buttons';
+import { actions } from '../../../redux/cardShop/CardShopSlice';
 
 const MiniCards = () => {
    const [DATA, setDATA] = useState("");
@@ -8,10 +11,12 @@ const MiniCards = () => {
 
    const JacketVestsData = useSelector(state => state.JacketVest);
    const shoesMans = useSelector(state => state.mensShoes);
+   const HoodiesSweatshirtsData = useSelector(state => state.HoodiesSweatshirts)
 
-   const data = [...JacketVestsData, ...shoesMans];
 
-   const res = () => {
+   const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData];
+
+   const dataRes = () => {
       data.map(el => {
          if (el.id == params.id) {
             setDATA(el);
@@ -19,15 +24,51 @@ const MiniCards = () => {
       });
    };
 
+   const pdSiz = DATA.size.map(e => {
+      return (
+         <div key={e.id} >
+            <button>{e.s}</button>
+            {/* <Buttons style={{ fontSize: 24, width: 70, height: 40, }} title={`${e.s}`} /> */}
+         </div>
+      )
+   })
+
+
+   const dispatch = useDispatch()
+
+
    useEffect(() => {
-      res();
+      dataRes();
    }, []);
 
    return (
-      <div>
-         <h1>{DATA.name}</h1>
-         <p>{DATA.title}</p>
-         <img src={DATA.img} alt="" />
+      <div className='container'>
+         <div className="CartBuy">
+            <div className="ControlBlockImgCartBuy">
+               <img src={DATA.img} alt="" />
+               <div>
+                  <h1 className='ControlBlockTextCartBuyName'>{DATA.name}</h1>
+                  <p className='ControlBlockTextCartBuyTitle'>{DATA.title}</p>
+                  <hr />
+                  <div >
+                     {pdSiz}
+                  </div>
+                  <hr />
+                  <div>
+                     <p style={{ fontSize: "20px", fontWeight: 600 }}>Opisanie</p>
+                     <p className='ControlBlockTextCartBuyDescription'>{DATA.description}</p>
+                  </div>
+               </div>
+            </div>
+            <div className="ControlBlockTextCartBuy">
+               <div className='ControlBlockTextCartBuyBtnBuyBlock'>
+                  <div className='blockFixed'>
+                     <p className='ControlBlockTextCartBuyPrice'>${DATA.price}</p>
+                     <Buttons style={{ background: '#fff', color: 'black', borderColor: 'rgb(98, 97, 97)' }} onClick={() => dispatch(actions.addToCard(DATA))} className="ControlBlockTextCartBuyBtnBuy" title='Add To Card' />
+                  </div>
+               </div>
+            </div>
+         </div>
       </div>
    );
 };

@@ -26,8 +26,8 @@ const MensMenu = () => {
       {
          key: "3",
          label: (
-            <Link >
-               Performance
+            <Link to='/hoodies-sweatshirts'>
+               Hoodies && Sweatshirts
             </Link>
          )
       },
@@ -35,20 +35,12 @@ const MensMenu = () => {
          key: "4",
          label: (
             <Link >
-               Hoodies && Sweatshirts
-            </Link>
-         )
-      },
-      {
-         key: "5",
-         label: (
-            <Link >
                Shorts
             </Link>
          )
       },
       {
-         key: "6",
+         key: "5",
          label: (
             <Link >
                Socks

@@ -5,7 +5,7 @@ const ShoesMans = () => {
    const shoesMans = useSelector(state => state.mensShoes);
 
    return (
-      <div>
+      <div className="controlCart">
          {shoesMans.map(el => (
             <Cards key={el.id} productsId={el.id} items={el} />
          ))}

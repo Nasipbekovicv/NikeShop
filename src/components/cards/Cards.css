@@ -1,0 +1,30 @@
+.CartControl {
+    padding-top: 40px;
+    cursor: pointer;
+}
+
+.CartSize {
+    width: 350px;
+    height: 550px;
+}
+
+.imgCards {
+    width: 350px;
+    /* height: 400px; */
+}
+
+.textCardsName {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0;
+}
+
+.textCardsTitle {
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 0 20px 0;
+}
+
+.textCardsPrice {
+    font-size: 16px;
+}
