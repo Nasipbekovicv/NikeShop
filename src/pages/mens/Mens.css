@@ -1,0 +1,156 @@
+.MenMenusHomeControl {
+    display: flex;
+    align-items: center;
+    width: 1440px;
+    height: 60px;
+}
+
+.MenMenusHomeControl h3 {
+    padding-right: 300px;
+    font-weight: 500;
+}
+
+.MenMenusHome {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.MenMenusHome li a {
+    color: black;
+    font-weight: 400;
+}
+
+.mensImgOneBlockOne {
+    width: 1440px;
+}
+
+.textBlockOneMensHome {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    text-align: center;
+}
+
+.textBlockOneMensHome h3 {
+    font-size: 72px;
+    font-weight: 900;
+}
+
+.textBlockOneMensHome p {
+    font-size: 20px;
+}
+
+.MensHomeBlockTwo h3 {
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.MensHomeBlockTwoControlImg {
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+
+.MensHomeBlockTwoImgOne img {
+    width: 700px;
+}
+
+.MensHomeBlockTwoImgOne {
+    position: relative;
+}
+
+.MensHomeBlockTwoImgOneText {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: white;
+}
+
+.MensHomeBlockTwoImgOneText p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+}
+
+.MensHomeBlockTwoImgOneText button {
+    font-size: 16px;
+    font-weight: 500;
+    background: white;
+    color: black;
+}
+
+.MensHomeBlockTwoImgOneText h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0px 0 20px 0;
+}
+
+.MensHomeBlockTwoImgTwo img {
+    width: 700px;
+}
+
+.MensHomeBlockTwoImgTwo {
+    position: relative;
+}
+
+.MensHomeBlockTwoImgTwoText {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+}
+
+.MensHomeBlockTwoImgTwoText p {
+    font-size: 16px;
+    font-weight: 500;
+    padding: 0 0 10px 0;
+}
+
+.MensHomeBlockTwoImgTwoText h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0px 0 20px 0;
+}
+
+.MensHomeBlockTwoImgTwoText button {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.MensHomeBlockTreImg {
+    width: 1440px;
+}
+
+.TextSortsMenHome {
+    padding: 20px 0 10px 0;
+    font-size: 38px;
+    font-weight: 500;
+}
+
+.MensHomeBlockTreText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.MensHomeBlockTreText h3 {
+    font-size: 72px;
+    font-weight: 500;
+}
+
+.MensHomeBlockTreText p {
+    font-size: 16px;
+    padding: 10px 0 20px 0;
+}
+
+.MensHomeBlockTreTextButtons {
+    display: flex;
+    column-gap: 20px;
+}
+
+.MensHomeBlockTreTextButtons button {
+    font-size: 16px;
+}
