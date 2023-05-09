@@ -4,10 +4,12 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import Buttons from '../../button/Buttons';
 import { actions } from '../../../redux/cardShop/CardShopSlice';
+import Comments from '../../comments/Comments';
 
 const MiniCards = () => {
    const [DATA, setDATA] = useState("");
    const params = useParams();
+   const dispatch = useDispatch()
 
    const JacketVestsData = useSelector(state => state.JacketVest);
    const shoesMans = useSelector(state => state.mensShoes);
@@ -24,17 +26,9 @@ const MiniCards = () => {
       });
    };
 
-   const pdSiz = DATA.size.map(e => {
-      return (
-         <div key={e.id} >
-            <button>{e.s}</button>
-            {/* <Buttons style={{ fontSize: 24, width: 70, height: 40, }} title={`${e.s}`} /> */}
-         </div>
-      )
-   })
+   // const pdSiz = DATA.size.map(e => <button key={e.id}>{e.s}</button>)
 
 
-   const dispatch = useDispatch()
 
 
    useEffect(() => {
@@ -45,15 +39,15 @@ const MiniCards = () => {
       <div className='container'>
          <div className="CartBuy">
             <div className="ControlBlockImgCartBuy">
-               <img src={DATA.img} alt="" />
+               <img style={{ width: 400 }} src={DATA.img} alt="" />
                <div>
                   <h1 className='ControlBlockTextCartBuyName'>{DATA.name}</h1>
                   <p className='ControlBlockTextCartBuyTitle'>{DATA.title}</p>
-                  <hr />
+
                   <div >
-                     {pdSiz}
+                     {/* {pdSiz} */}
                   </div>
-                  <hr />
+
                   <div>
                      <p style={{ fontSize: "20px", fontWeight: 600 }}>Opisanie</p>
                      <p className='ControlBlockTextCartBuyDescription'>{DATA.description}</p>
@@ -68,6 +62,9 @@ const MiniCards = () => {
                   </div>
                </div>
             </div>
+         </div>
+         <div>
+            <Comments/>
          </div>
       </div>
    );

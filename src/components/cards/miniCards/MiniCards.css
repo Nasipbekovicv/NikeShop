@@ -7,6 +7,7 @@
 
 .ControlBlockImgCartBuy {
     width: 1000px;
+    height: 500px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -22,10 +23,7 @@
 .ControlBlockTextCartBuy {
     width: 440px;
     position: relative;
-    /* height: 600px; */
-    /* display: flex;
-    flex-direction: column;
-    justify-content: space-between; */
+    height: 500px;
 }
 
 .ControlBlockTextCartBuyName {
@@ -60,11 +58,14 @@
 }
 
 .ControlBlockTextCartBuyBtnBuyBlock {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    position: fixed;
+    align-items: center; */
+    position: relative;
+    flex-shrink: 0;
+    height: 500px;
+    width: 440px;
 }
 
 .ControlBlockTextCartBuyBtnBuy {
@@ -78,10 +79,14 @@
 }
 
 .blockFixed {
+    /* position: fixed;
     position: absolute;
     left: 130px;
-    top: 0;
-    background: rgb(217, 217, 217);
+    top: 0; */
+    /* z-index: -1; */
+    position: sticky;
+    top: 10px;
+    background: rgb(239, 239, 239);
     width: 200px;
     height: 110px;
     border-radius: 10px;

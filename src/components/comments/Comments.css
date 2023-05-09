@@ -1,0 +1,39 @@
+.allBlockComments {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.blockComments {
+    width: 400px;
+    height: 200px;
+    background: rgb(235, 235, 235);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+    box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px -7px rgba(0, 0, 0, 0.75);
+}
+
+.contrlInputAndBtnComments {
+    padding: 50px;
+}
+
+.comments {
+    width: 300px;
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 10px;
+    font-size: 16px;
+    border-color: none;
+}
+
+.controlComments {
+    width: 400px;
+    height: 400px;
+    background: rgb(229, 229, 229);
+}

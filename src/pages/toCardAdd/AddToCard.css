@@ -1,0 +1,38 @@
+.controlBlockAndUshetchik {
+    display: flex;
+    align-items: center;
+    column-gap: 20px;
+}
+
+.controlBlockComeCart {
+    width: 400px;
+    background-color: #F2F2F2;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.imgCardCome {
+    width: 140px;
+}
+
+.controlTextCome {
+    width: 200px;
+    padding: 30px 20px 0 0;
+}
+
+.nameTextCome {
+    font-size: 20px;
+}
+
+.controlUshootchik {
+    width: 50px;
+    height: 100px;
+    background-color: wheat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    border-radius: 10px;
+}

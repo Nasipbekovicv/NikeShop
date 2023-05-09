@@ -5,6 +5,7 @@ import { JacketVestsReducer } from './mens/JacketVests/JacketVestsSlice'
 import { HoodiesSweatshirtsReducer } from './mens/HoodiesSweatshirts/HoodiesSweatshirtsSlice'
 import { shoesMenDataFilterReducer } from './search/SearchSlice'
 import { cardShopReducer } from './cardShop/CardShopSlice'
+import { commentReaducer } from './comments/CommentsSlice'
 
 
 const combineReducer = combineReducers({
@@ -16,7 +17,9 @@ const combineReducer = combineReducers({
     // search
     filterMansShoes: shoesMenDataFilterReducer,
     //  addToCard
-    addToCard: cardShopReducer
+    addToCard: cardShopReducer,
+    // comments
+    comments: commentReaducer,
 })
 
 const store = configureStore({
