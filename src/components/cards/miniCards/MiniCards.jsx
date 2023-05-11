@@ -1,20 +1,25 @@
 import './MiniCards.css'
-import { useParams } from "react-router-dom";
+import { useNavigate, useParams } from "react-router-dom";
 import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import Buttons from '../../button/Buttons';
 import { actions } from '../../../redux/cardShop/CardShopSlice';
 import Comments from '../../comments/Comments';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
+import { BsFillCheckCircleFill } from 'react-icons/bs'
+
 const MiniCards = () => {
    const [DATA, setDATA] = useState("");
    const params = useParams();
    const dispatch = useDispatch()
+   const navigate = useNavigate()
 
    const JacketVestsData = useSelector(state => state.JacketVest);
    const shoesMans = useSelector(state => state.mensShoes);
    const HoodiesSweatshirtsData = useSelector(state => state.HoodiesSweatshirts)
-
 
    const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData];
 
@@ -26,17 +31,15 @@ const MiniCards = () => {
       });
    };
 
-   // const pdSiz = DATA.size.map(e => <button key={e.id}>{e.s}</button>)
-
-
-
-
    useEffect(() => {
       dataRes();
    }, []);
 
    return (
       <div className='container'>
+         <div className='controlBack-1'>
+            <Buttons onClick={() => navigate(-1)} title='Back'/>
+         </div>
          <div className="CartBuy">
             <div className="ControlBlockImgCartBuy">
                <img style={{ width: 400 }} src={DATA.img} alt="" />
@@ -58,7 +61,8 @@ const MiniCards = () => {
                <div className='ControlBlockTextCartBuyBtnBuyBlock'>
                   <div className='blockFixed'>
                      <p className='ControlBlockTextCartBuyPrice'>${DATA.price}</p>
-                     <Buttons style={{ background: '#fff', color: 'black', borderColor: 'rgb(98, 97, 97)' }} onClick={() => dispatch(actions.addToCard(DATA))} className="ControlBlockTextCartBuyBtnBuy" title='Add To Card' />
+                     <Buttons style={{ background: '#fff', color: 'black', borderColor: 'rgb(98, 97, 97)' }} onClick={() => dispatch(actions.addToCard(DATA), toast.success("the product was successfully added", {icon: <BsFillCheckCircleFill/>} )
+)} className="ControlBlockTextCartBuyBtnBuy" title='Add To Card' />
                   </div>
                </div>
             </div>
@@ -66,6 +70,7 @@ const MiniCards = () => {
          <div>
             <Comments/>
          </div>
+         <ToastContainer />
       </div>
    );
 };

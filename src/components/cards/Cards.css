@@ -1,30 +1,39 @@
-.CartControl {
-    padding-top: 40px;
-    cursor: pointer;
-}
-
-.CartSize {
-    width: 350px;
-    height: 550px;
-}
-
-.imgCards {
-    width: 350px;
-    /* height: 400px; */
-}
-
-.textCardsName {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px 0;
-}
-
-.textCardsTitle {
-    font-size: 18px;
-    font-weight: 500;
-    padding: 5px 0 20px 0;
-}
-
-.textCardsPrice {
-    font-size: 16px;
-}
+    .CartControl {
+        padding-top: 40px;
+        cursor: pointer;
+    }
+    
+    .CartSize {
+        width: 350px;
+        height: 550px;
+    }
+    
+    .imgCards {
+        width: 350px;
+        height: 430px;
+    }
+    /* .imgCards:hover {
+        width: 350px;
+        height: 430px;
+        transform: scale(1.01);
+        -webkit-transition: -webkit-transform .4s ease-in-out;
+        transition: -webkit-transform .4s ease-in-out;
+        transition: transform .4s ease-in-out;
+        transition: transform .4s ease-in-out, -webkit-transform .4s ease-in-out;
+    } */
+    
+    .textCardsName {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 0;
+    }
+    
+    .textCardsTitle {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 5px 0 20px 0;
+    }
+    
+    .textCardsPrice {
+        font-size: 16px;
+    }

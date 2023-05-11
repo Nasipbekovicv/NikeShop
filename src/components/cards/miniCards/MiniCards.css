@@ -1,8 +1,12 @@
+.controlBack-1 {
+    padding: 50px 0 0 0;
+}
+
 .CartBuy {
     display: flex;
     flex-direction: row;
     /* justify-content: space-between; */
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 .ControlBlockImgCartBuy {
@@ -58,14 +62,11 @@
 }
 
 .ControlBlockTextCartBuyBtnBuyBlock {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
     position: relative;
     flex-shrink: 0;
     height: 500px;
     width: 440px;
+    padding: 0 0 0px 100px;
 }
 
 .ControlBlockTextCartBuyBtnBuy {
@@ -79,11 +80,6 @@
 }
 
 .blockFixed {
-    /* position: fixed;
-    position: absolute;
-    left: 130px;
-    top: 0; */
-    /* z-index: -1; */
     position: sticky;
     top: 10px;
     background: rgb(239, 239, 239);

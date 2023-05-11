@@ -1,15 +1,23 @@
 import { useSelector } from "react-redux";
 import Cards from "../../../components/cards/Cards";
 import '../../Cart.css'
+import Reclams from "../../../components/reklams/Reclams";
+import MensMenu from "../../../components/mensMenu/MensMenu";
 
 const JacketVests = () => {
   const JacketVestsData = useSelector(state => state.JacketVest);
 
   return (
     <>
-    <div>
-      <h2>asko</h2>
-    </div>
+      <div>
+        <div>
+          <MensMenu/>
+        </div>
+        <Reclams/>
+        <div>
+          <h3 style={{padding: '20px 0 0 350px', fontSize: 110}}>JacketVests</h3>
+        </div>
+      </div>
       <div className="controlCart">
         {JacketVestsData.map(el => (
           <Cards key={el.id} productsId={el.id} items={el} />

@@ -34,7 +34,8 @@ const Cards = props => {
             <Meta className="textCardsTitle" description={props.items.title} />
                </div>
                <div>
-            <Buttons className="textCardsPrice" title={`$ ${props.items.price}`} />
+                  <h3>${props.items.price}</h3>
+            {/* <Buttons className="textCardsPrice" title={`$ ${props.items.price}`} /> */}
                </div>
             </div>
          </Card>

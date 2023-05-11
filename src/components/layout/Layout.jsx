@@ -1,5 +1,5 @@
 import { Link, Outlet } from "react-router-dom";
-import { BsCartCheck } from "react-icons/bs";
+import { BiShoppingBag } from "react-icons/bi";
 // import { Input } from "antd";
 
 import KidsMenu from "./KidsMenu";
@@ -58,7 +58,7 @@ const Layout = () => {
                               </li>
                               <li>
                                  <Link to='/addCome'>
-                                    <BsCartCheck style={{ fontSize: 24 }} />
+                                    <BiShoppingBag style={{ fontSize: 24 }} />
                                  </Link>
                               </li>
                               <div>

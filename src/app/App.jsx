@@ -10,6 +10,7 @@ import Mens from '../pages/mens/Mens'
 import ShoesMans from '../pages/mens/shoes/ShoesMans'
 import './App.css'
 import AddToCard from '../pages/toCardAdd/AddToCard'
+import Shorts from '../pages/mens/shorts/Shorts'
 
 const getItems = (st) => st.filterMansShoes.item2 // [1,2]
 
@@ -34,6 +35,7 @@ const App = () => {
           <Route path='/jacket-vest' element={<JacketVests />} />
           <Route path="/mini-cards/:id" element={<MiniCards />} />
           <Route path='/hoodies-sweatshirts' element={<HoodiesSweatshirts />} />
+          <Route path='/short-men' element={<Shorts />} />
         </Route>
       </Routes>
     </div>

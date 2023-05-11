@@ -34,7 +34,7 @@ const MensMenu = () => {
       {
          key: "4",
          label: (
-            <Link >
+            <Link to='/short-men'>
                Shorts
             </Link>
          )
