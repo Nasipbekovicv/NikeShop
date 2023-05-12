@@ -2,7 +2,7 @@ import { useSelector } from "react-redux";
 import Cards from "../../../components/cards/Cards";
 import '../../Cart.css'
 import Reclams from "../../../components/reklams/Reclams";
-import MensMenu from "../../../components/mensMenu/MensMenu";
+import MensMenu from "../../../components/mensMenu/MensMenuHome";
 
 const JacketVests = () => {
   const JacketVestsData = useSelector(state => state.JacketVest);

@@ -11,6 +11,8 @@ import ShoesMans from '../pages/mens/shoes/ShoesMans'
 import './App.css'
 import AddToCard from '../pages/toCardAdd/AddToCard'
 import Shorts from '../pages/mens/shorts/Shorts'
+import Socks from '../pages/mens/socks/Socks'
+import Womens from '../pages/womens/Womens'
 
 const getItems = (st) => st.filterMansShoes.item2 // [1,2]
 
@@ -36,6 +38,9 @@ const App = () => {
           <Route path="/mini-cards/:id" element={<MiniCards />} />
           <Route path='/hoodies-sweatshirts' element={<HoodiesSweatshirts />} />
           <Route path='/short-men' element={<Shorts />} />
+          <Route path='/socks' element={<Socks/>} />
+
+          <Route path='/womens' element={<Womens/>}/>
         </Route>
       </Routes>
     </div>

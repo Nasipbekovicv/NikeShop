@@ -1,5 +1,5 @@
 
-import MensMenu from "../../../components/mensMenu/MensMenu";
+import MensMenu from "../../../components/mensMenu/MensMenuHome";
 import { useSelector } from "react-redux"
 import Cards from '../../../components/cards/Cards'
 

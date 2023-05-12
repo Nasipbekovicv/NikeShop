@@ -12,7 +12,7 @@ const OneReaclmas = () => {
   return (
     <div className='container'>
       <div style={{ paddingTop: 30 }}>
-            <h1 style={{ fontWeight: 400 }}>Nike Membership</h1>
+            <h1 style={{ fontWeight: 600 , fontSize: 20}}>Nike Membership</h1>
             <div className="coverBlockImg">
                <img className="imgCoverNikeHome" src={nikeCover} alt="" />
                <div className="imgCoverNikeHomeText">

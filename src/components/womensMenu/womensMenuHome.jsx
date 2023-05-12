@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom"
 
-const MensMenu = () => {
+const WomensMenu = () => {
   return (
     <div>
        <div className="MenMenusHomeControl">
-                  <h3>Mens</h3>
+                  <h3>Womens</h3>
                   <div>
                      <ul className="MenMenusHome">
                         <li>
@@ -20,7 +20,7 @@ const MensMenu = () => {
                            <Link to='/short-men'> Shorts</Link>
                         </li>
                         <li>
-                           <Link> Socks</Link>
+                           <Link to='/socks'> Socks</Link>
                         </li>
                      </ul>
                   </div>
@@ -29,4 +29,4 @@ const MensMenu = () => {
   )
 }
 
-export default MensMenu
+export default WomensMenu

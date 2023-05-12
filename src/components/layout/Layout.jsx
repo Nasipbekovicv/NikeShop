@@ -46,7 +46,7 @@ const Layout = () => {
                                  <Link to='/mens'><MensMenu /></Link>
                               </li>
                               <li>
-                                 <Link><WomensMenu /></Link>
+                                 <Link to='/womens'><WomensMenu /></Link>
                               </li>
                               <li>
                                  <Link>

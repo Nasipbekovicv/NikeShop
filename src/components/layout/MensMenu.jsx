@@ -42,7 +42,7 @@ const MensMenu = () => {
       {
          key: "5",
          label: (
-            <Link >
+            <Link to='/socks'>
                Socks
             </Link>
          )

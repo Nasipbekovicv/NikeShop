@@ -9,7 +9,7 @@ const WomensMenu = () => {
       {
          key: "1",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
+            <Link >
                Shoes
             </Link>
          )
@@ -17,7 +17,7 @@ const WomensMenu = () => {
       {
          key: "2",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
+            <Link >
                JacketVests
             </Link>
          )
@@ -25,7 +25,7 @@ const WomensMenu = () => {
       {
          key: "3",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
+            <Link >
                Performance
             </Link>
          )
@@ -33,7 +33,7 @@ const WomensMenu = () => {
       {
          key: "4",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
+            <Link >
                Hoodies && Sweatshirts
             </Link>
          )
@@ -41,7 +41,7 @@ const WomensMenu = () => {
       {
          key: "5",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
+            <Link>
                Shorts
             </Link>
          )
@@ -76,7 +76,7 @@ const WomensMenu = () => {
                      />
                   </div>
                )}>
-               <Link>
+               <Link to='/womens'>
                   <Space>Womens</Space>
                </Link>
             </Dropdown>

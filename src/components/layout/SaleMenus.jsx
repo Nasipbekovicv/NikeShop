@@ -77,7 +77,7 @@ const SaleMenus = () => {
                      />
                   </div>
                )}>
-               <Link>
+               <Link >
                   <Space>Sale</Space>
                </Link>
             </Dropdown>

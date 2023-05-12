@@ -1,6 +1,6 @@
 import Cards from "../../../components/cards/Cards";
 import { useSelector } from "react-redux";
-import MensMenu from "../../../components/mensMenu/MensMenu";
+import MensMenu from "../../../components/mensMenu/MensMenuHome";
 
 const ShoesMans = () => {
    const shoesMans = useSelector(state => state.mensShoes);

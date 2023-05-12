@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+// import { Link } from "react-router-dom";
 import "./Mens.css";
 import Buttons from "../../components/button/Buttons";
 //        img
@@ -7,34 +7,14 @@ import MensHomeBlockTwoImgOne from "../../assets/mensHome/MensHomeBlockTwoImgOne
 import MensHomeBlockTwoImgTwo from "../../assets/mensHome/MensHomeBlockTwoImgTwo.jpg";
 import MensHomeBlockTreImg from "../../assets/mensHome/MensHomeBlockTreImg.jpg";
 import OneReaclmas from "../../components/reclams/OneReaclmas";
+import MensMenu from "../../components/mensMenu/MensMenuHome";
 
 const Mens = () => {
    return (
       <>
          <div className="container">
             <div>
-               <div className="MenMenusHomeControl">
-                  <h3>Men</h3>
-                  <div>
-                     <ul className="MenMenusHome">
-                        <li>
-                           <Link to='/shoes-mens'>Shoes</Link>
-                        </li>
-                        <li>
-                           <Link to='/jacket-vest' >JacketVests</Link>
-                        </li>
-                        <li>
-                           <Link> Hoodies && Sweatshirts</Link>
-                        </li>
-                        <li>
-                           <Link> Shorts</Link>
-                        </li>
-                        <li>
-                           <Link> Socks</Link>
-                        </li>
-                     </ul>
-                  </div>
-               </div>
+              <MensMenu/>
                <div className="MenHomeBlockOne">
                   <img
                      className="mensImgOneBlockOne"

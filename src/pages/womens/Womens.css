@@ -1,0 +1,259 @@
+.oneImgandTextWomen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContentOne {
+    /* width: 75%; */
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textContentOne p {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.textContentOne h3 {
+    font-size: 84px;
+    font-weight: 800;
+}
+
+.textContentOne button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+/*                        =====================                             */
+
+.TextBlockTwoTrending {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.twoBlockImgWomens {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imgTwoTwoImg {
+    display: flex;
+    column-gap: 40px;
+}
+
+.imgTwoTwoImg img {
+    width: 710px;
+}
+
+.blockTwoImgOne {
+    position: relative
+}
+
+.blockTwoImgOneText {
+    position: absolute;
+    bottom: 160px;
+    left: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.blockTwoImgOneText button {
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    color: black;
+}
+
+.blockTwoImgTwo {
+    position: relative
+}
+
+.blockTwoImgTwoText {
+    position: absolute;
+    bottom: 160px;
+    left: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.blockTwoImgTwoText button {
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    color: black;
+}
+
+.textBlockTwo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.textBlockTwo p {
+    font-style: 16px;
+    font-weight: 500;
+}
+
+.textBlockTwo h3 {
+    font-size: 84px;
+    font-weight: 800;
+}
+
+.textBlockTwo button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-top: 15px;
+}
+
+
+/*                    ========================                     */
+
+.treBlockWomens p {
+    font-size: 20px;
+    font-weight: 600;
+    padding: 20px 0;
+}
+
+.treBlockImgWomens {
+    position: relative;
+}
+
+.treBlockImgWomens>img {
+    width: 1440px;
+}
+
+.blockTreImgText {
+    position: absolute;
+    bottom: 100px;
+    left: 50px;
+    color: white;
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.blockTreImgText button {
+    padding: 20px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    background: white;
+    color: black;
+}
+
+
+/*                           ====================                           */
+
+.TextBlockTwoWomen {
+    padding: 30px 0 10px 0;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.fooBlockWomens {
+    display: flex;
+    column-gap: 10px;
+}
+
+.fooBlockWomensImgOne img {
+    width: 680px;
+    height: 852px;
+}
+
+.fooBlockWomensImgOne {
+    position: relative
+}
+
+.fooBlockWomensImgOneText {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgOneText button {
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgTwo img {
+    width: 680px;
+}
+
+.fooBlockWomensImgTwo {
+    position: relative
+}
+
+.fooBlockWomensImgTwoText {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgTwoText button {
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgTree img {
+    width: 750px;
+}
+
+.fooBlockWomensImgTree {
+    position: relative
+}
+
+.fooBlockWomensImgTreeText {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgTreeText button {
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgFoo img {
+    width: 750px;
+    height: 800px;
+}
+
+.fooBlockWomensImgFoo {
+    position: relative
+}
+
+.fooBlockWomensImgFooText {
+    position: absolute;
+    bottom: 80px;
+    left: 40px;
+    color: white;
+    font-weight: 500;
+}
+
+.fooBlockWomensImgFooText button {
+    background: white;
+    color: black;
+    font-size: 18px;
+    font-weight: 500;
+}
