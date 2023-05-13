@@ -20,8 +20,13 @@ const MiniCards = () => {
    const JacketVestsData = useSelector(state => state.JacketVest);
    const shoesMans = useSelector(state => state.mensShoes);
    const HoodiesSweatshirtsData = useSelector(state => state.HoodiesSweatshirts)
+   const skDt =  useSelector( st => st.SkirtsDresses )
+   const socksData = useSelector(st => st.socks)
+   const dt_shs_Wmes =  useSelector( st => st.womensShoes )
+   const leggings =  useSelector( st => st.Leggings )
 
-   const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData];
+
+   const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData, ...skDt, ...socksData, ...dt_shs_Wmes, ...leggings];
 
    const dataRes = () => {
       data.map(el => {

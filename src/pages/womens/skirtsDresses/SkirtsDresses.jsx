@@ -5,7 +5,7 @@ import Cards from "../../../components/cards/Cards"
 
 const SkirtsDresses = () => {
 
-   const dt_shs_Wmes =  useSelector( st => st.SkirtsDresses )
+   const skDt =  useSelector( st => st.SkirtsDresses )
 
   return (
    <>
@@ -18,7 +18,7 @@ const SkirtsDresses = () => {
         </div>
       </div>
       <div className="controlCart">
-        {dt_shs_Wmes.map(el => (
+        {skDt.map(el => (
           <Cards key={el.id} productsId={el.id} items={el} />
         ))}
       </div>
