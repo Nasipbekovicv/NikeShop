@@ -70,7 +70,7 @@ const KidsMenu = () => {
                      />
                   </div>
                )}>
-               <Link>
+               <Link to='/kids'>
                   <Space>Kids</Space>
                </Link>
             </Dropdown>

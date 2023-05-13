@@ -49,13 +49,13 @@ const Layout = () => {
                                  <Link to='/womens'><WomensMenu /></Link>
                               </li>
                               <li>
-                                 <Link>
+                                 <Link to='/kids'>
                                     <KidsMenu />
                                  </Link>
                               </li>
-                              <li>
+                              {/* <li>
                                  <Link><SaleMenus /></Link>
-                              </li>
+                              </li> */}
                               <li>
                                  <Link to='/addCome'>
                                     <BiShoppingBag style={{ fontSize: 24 }} />

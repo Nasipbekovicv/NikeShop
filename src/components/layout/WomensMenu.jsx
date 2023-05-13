@@ -9,7 +9,7 @@ const WomensMenu = () => {
       {
          key: "1",
          label: (
-            <Link >
+            <Link to='/shoes-womens'>
                Shoes
             </Link>
          )
@@ -17,16 +17,16 @@ const WomensMenu = () => {
       {
          key: "2",
          label: (
-            <Link >
-               JacketVests
+            <Link to='/leggings'>
+               Leggings
             </Link>
          )
       },
       {
          key: "3",
          label: (
-            <Link >
-               Performance
+            <Link to='/skirts-dresses'>
+               Skirts & Dresses
             </Link>
          )
       },
@@ -34,14 +34,14 @@ const WomensMenu = () => {
          key: "4",
          label: (
             <Link >
-               Hoodies && Sweatshirts
+               Shorts
             </Link>
          )
       },
       {
          key: "5",
          label: (
-            <Link>
+            <Link to='/women-socks'>
                Shorts
             </Link>
          )

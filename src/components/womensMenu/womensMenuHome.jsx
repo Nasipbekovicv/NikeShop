@@ -8,19 +8,19 @@ const WomensMenu = () => {
                   <div>
                      <ul className="MenMenusHome">
                         <li>
-                           <Link to='/shoes-mens'>Shoes</Link>
+                           <Link to='/shoes-womens'>Shoes</Link>
                         </li>
                         <li>
-                           <Link to='/jacket-vest' >JacketVests</Link>
+                           <Link to='/leggings' >Leggings</Link>
                         </li>
                         <li>
-                           <Link to='/hoodies-sweatshirts'> Hoodies && Sweatshirts</Link>
+                           <Link to='/skirts-dresses'>Skirts & Dresses</Link>
                         </li>
                         <li>
-                           <Link to='/short-men'> Shorts</Link>
+                           <Link to=''> Shorts</Link>
                         </li>
                         <li>
-                           <Link to='/socks'> Socks</Link>
+                           <Link to='/women-socks'> Socks</Link>
                         </li>
                      </ul>
                   </div>

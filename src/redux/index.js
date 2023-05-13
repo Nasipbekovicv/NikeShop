@@ -8,6 +8,9 @@ import { cardShopReducer } from './cardShop/CardShopSlice'
 import { commentReaducer } from './comments/CommentsSlice'
 import { ShortsReduce } from './mens/shorts/ShortsSlice'
 import { socksReducers } from './mens/socks/SocksSlice'
+import { womenShoesReducers } from './womens/shoes/WomenShoesSlice'
+import { SkirtsDressesReducer } from './womens/SkirtsDresses/SkirtsDressesSlice'
+import { LeggingsReducer } from './womens/leggings/LeggingsSlice'
 
 
 const combineReducer = combineReducers({
@@ -18,6 +21,10 @@ const combineReducer = combineReducers({
     HoodiesSweatshirts: HoodiesSweatshirtsReducer,
     shorts: ShortsReduce,
     socks: socksReducers,
+    // womensData
+    womensShoes: womenShoesReducers,
+    SkirtsDresses: SkirtsDressesReducer,
+    Leggings: LeggingsReducer,
     // search
     filterMansShoes: shoesMenDataFilterReducer,
     //  addToCard
