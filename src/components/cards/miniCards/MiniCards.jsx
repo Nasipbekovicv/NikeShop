@@ -20,10 +20,10 @@ const MiniCards = () => {
    const JacketVestsData = useSelector(state => state.JacketVest);
    const shoesMans = useSelector(state => state.mensShoes);
    const HoodiesSweatshirtsData = useSelector(state => state.HoodiesSweatshirts)
-   const skDt =  useSelector( st => st.SkirtsDresses )
+   const skDt = useSelector(st => st.SkirtsDresses)
    const socksData = useSelector(st => st.socks)
-   const dt_shs_Wmes =  useSelector( st => st.womensShoes )
-   const leggings =  useSelector( st => st.Leggings )
+   const dt_shs_Wmes = useSelector(st => st.womensShoes)
+   const leggings = useSelector(st => st.Leggings)
 
 
    const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData, ...skDt, ...socksData, ...dt_shs_Wmes, ...leggings];
@@ -43,7 +43,7 @@ const MiniCards = () => {
    return (
       <div className='container'>
          <div className='controlBack-1'>
-            <Buttons onClick={() => navigate(-1)} title='Back'/>
+            <Buttons onClick={() => navigate(-1)} title='Back' />
          </div>
          <div className="CartBuy">
             <div className="ControlBlockImgCartBuy">
@@ -51,11 +51,6 @@ const MiniCards = () => {
                <div>
                   <h1 className='ControlBlockTextCartBuyName'>{DATA.name}</h1>
                   <p className='ControlBlockTextCartBuyTitle'>{DATA.title}</p>
-
-                  <div >
-                     {/* {pdSiz} */}
-                  </div>
-
                   <div>
                      <p style={{ fontSize: "20px", fontWeight: 600 }}>Opisanie</p>
                      <p className='ControlBlockTextCartBuyDescription'>{DATA.description}</p>
@@ -66,14 +61,14 @@ const MiniCards = () => {
                <div className='ControlBlockTextCartBuyBtnBuyBlock'>
                   <div className='blockFixed'>
                      <p className='ControlBlockTextCartBuyPrice'>${DATA.price}</p>
-                     <Buttons style={{ background: '#fff', color: 'black', borderColor: 'rgb(98, 97, 97)' }} onClick={() => dispatch(actions.addToCard(DATA), toast.success("the product was successfully added", {icon: <BsFillCheckCircleFill/>} )
-)} className="ControlBlockTextCartBuyBtnBuy" title='Add To Card' />
+                     <Buttons style={{ background: '#fff', color: 'black', borderColor: 'rgb(98, 97, 97)' }} onClick={() => dispatch(actions.addToCard(DATA), toast.success("the product was successfully added", { icon: <BsFillCheckCircleFill /> })
+                     )} className="ControlBlockTextCartBuyBtnBuy" title='Add To Card' />
                   </div>
                </div>
             </div>
          </div>
          <div>
-            <Comments/>
+            <Comments />
          </div>
          <ToastContainer />
       </div>

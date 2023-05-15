@@ -1,0 +1,60 @@
+    .kidsBlockOneHome img {
+        width: 1440px;
+    }
+    
+    .kidsBlockOneHome {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .kidsBlockOneHomeText {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 10px;
+    }
+    
+    .kidsBlockOneHomeText h3 {
+        font-size: 84px;
+        font-weight: 900;
+    }
+    
+    .kidsBlockOneHomeText p {
+        font-size: 16px;
+        font-weight: 600;
+    }
+    
+    .kidsBlockOneHomeText button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
+    }
+    /* ====================================================================== */
+    
+    .kidsBlockTwoHome {
+        display: flex;
+        position: relative;
+    }
+    
+    .kidsImg1BlockTwo img {
+        width: 800px;
+    }
+    
+    .kidsImg2BlockTwo img {
+        width: 800px;
+        clip-path: inset(0% 0% 28% 0%);
+    }
+    
+    .kidsImg3BlockTwo img {
+        width: 800px;
+    }
+    
+    .kidsImg4BlockTwo img {
+        /* width: 1200px; */
+        -webkit-clip-path: inset(0% 0% 0% 30%);
+        clip-path: inset(0% 0% 0% 30%);
+        object-fit: cover;
+        position: absolute;
+        left: 0;
+    }

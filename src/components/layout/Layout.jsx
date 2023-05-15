@@ -1,18 +1,15 @@
-import { Link, Outlet } from "react-router-dom";
 import { BiShoppingBag } from "react-icons/bi";
-// import { Input } from "antd";
+import { Link, Outlet } from "react-router-dom";
 
+import Search from "../search/Search";
 import KidsMenu from "./KidsMenu";
 import MensMenu from "./MensMenu";
 import WomensMenu from "./WomensMenu";
-import SaleMenus from "./SaleMenus";
-import Search from "../search/Search";
 
-import {MdOutlineLocationOn} from 'react-icons/md'
+import { MdOutlineLocationOn } from 'react-icons/md';
 
 const Layout = () => {
-   // const onSearch = value => console.log(value);
-   // const { Search } = Input;
+   
 
    return (
       <div className="">
@@ -53,22 +50,12 @@ const Layout = () => {
                                     <KidsMenu />
                                  </Link>
                               </li>
-                              {/* <li>
-                                 <Link><SaleMenus /></Link>
-                              </li> */}
                               <li>
                                  <Link to='/addCome'>
                                     <BiShoppingBag style={{ fontSize: 24 }} />
                                  </Link>
                               </li>
                               <div>
-                                 {/* <Search
-                                    placeholder="input search text"
-                                    allowClear
-                                    enterButton="Search"
-                                    size="middle"
-                                    onSearch={onSearch}
-                                 /> */}
                                  <Search/>
                               </div>
                            </ul>
@@ -82,7 +69,7 @@ const Layout = () => {
                   <Outlet />
                </div>
             </main>
-            <footer>
+            <footer style={{background: '#111111'}}>
                <div className="container">
                   <div className="footer">
                      <div className="footerControl">
