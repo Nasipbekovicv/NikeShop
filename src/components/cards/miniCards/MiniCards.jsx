@@ -4,7 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { useEffect, useState } from "react";
 import Buttons from '../../button/Buttons';
 import { actions } from '../../../redux/cardShop/CardShopSlice';
-import Comments from '../../comments/Comments';
+// import Comments from '../../comments/Comments';
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -24,9 +24,11 @@ const MiniCards = () => {
    const socksData = useSelector(st => st.socks)
    const dt_shs_Wmes = useSelector(st => st.womensShoes)
    const leggings = useSelector(st => st.Leggings)
+   const skirtsDress = useSelector(st => st.SkirtsDresses)
+   const shoesKids = useSelector(st => st.shoesKids)
 
 
-   const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData, ...skDt, ...socksData, ...dt_shs_Wmes, ...leggings];
+   const data = [...JacketVestsData, ...shoesMans, ...HoodiesSweatshirtsData, ...skDt, ...socksData, ...dt_shs_Wmes, ...leggings, skirtsDress, ...shoesKids];
 
    const dataRes = () => {
       data.map(el => {
@@ -39,6 +41,8 @@ const MiniCards = () => {
    useEffect(() => {
       dataRes();
    }, []);
+
+   
 
    return (
       <div className='container'>

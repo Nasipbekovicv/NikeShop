@@ -10,7 +10,7 @@ const KidsMenu = () => {
       {
          key: "1",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
+            <Link to='/shoesKids'>
                Shoes
             </Link>
          )
@@ -18,24 +18,24 @@ const KidsMenu = () => {
       {
          key: "2",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
-               JacketVests
+            <Link >
+               Clothing
             </Link>
          )
       },
       {
          key: "3",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
-               Performance
+            <Link >
+               New Arrivals
             </Link>
          )
       },
       {
          key: "4",
          label: (
-            <Link target="_blank" rel="noopener noreferrer" href="">
-               Hoodies && Sweatshirts
+            <Link >
+               Gear & Accessories
             </Link>
          )
       },

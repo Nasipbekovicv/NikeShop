@@ -6,7 +6,7 @@ import KidsMenu from "./KidsMenu";
 import MensMenu from "./MensMenu";
 import WomensMenu from "./WomensMenu";
 
-import { MdOutlineLocationOn } from 'react-icons/md';
+// import { MdOutlineLocationOn } from 'react-icons/md';
 
 const Layout = () => {
    

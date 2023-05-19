@@ -12,6 +12,14 @@ import { womenShoesReducers } from './womens/shoes/WomenShoesSlice'
 import { SkirtsDressesReducer } from './womens/SkirtsDresses/SkirtsDressesSlice'
 import { LeggingsReducer } from './womens/leggings/LeggingsSlice'
 import { shoesKidsReducer } from './kids/shoes/ShoesSlice'
+import { persistReducer } from 'redux-persist'
+import storage from 'redux-persist/lib/storage'
+
+
+const persistConfig = {
+    key: 'root',
+    storage,
+}
 
 
 const combineReducer = combineReducers({
@@ -36,8 +44,10 @@ const combineReducer = combineReducers({
     comments: commentReaducer,
 })
 
+const persistedReducer = persistReducer(persistConfig, combineReducer)
+
 const store = configureStore({
-    reducer: combineReducer
+    reducer: persistedReducer
 })
 
 export default store

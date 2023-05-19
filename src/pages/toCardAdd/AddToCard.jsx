@@ -77,10 +77,18 @@ const AddToCard = () => {
         })}
       </div>
       <div className='blockBuyControl'>
-        <div className='fixblockBuyControl'>
+        <div style={{
+            height: '70vh',
+           
+          }} className='fixblockBuyControl'>
           {toComeCard?.length > 0 ?  buyCart() : 
           <div>
-            <p>Cupite</p>
+            <p style={{
+              position: 'relative',
+              left: '-180px',
+              fontSize: 33,
+              fontWeight: 600
+          }}>Cupite</p>
           </div>
           }
         </div>
