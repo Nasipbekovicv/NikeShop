@@ -1,54 +1,56 @@
 import { Link } from "react-router-dom";
 import { Divider, Dropdown, Space, theme } from "antd";
 import { cloneElement } from "react";
+
+
+
+const items = [
+   {
+      key: "1",
+      label: (
+         <Link to='/shoes-mens' >
+            Shoes
+         </Link>
+      )
+   },
+   {
+      key: "2",
+      label: (
+         <Link to='/jacket-vest'>
+            JacketVests
+         </Link>
+      )
+   },
+   {
+      key: "3",
+      label: (
+         <Link to='/hoodies-sweatshirts'>
+            Hoodies && Sweatshirts
+         </Link>
+      )
+   },
+   {
+      key: "4",
+      label: (
+         <Link to='/short-men'>
+            Shorts
+         </Link>
+      )
+   },
+   {
+      key: "5",
+      label: (
+         <Link to='/socks'>
+            Socks
+         </Link>
+      )
+   }
+];
+
+
 const MensMenu = () => {
    const { useToken } = theme;
    const { token } = useToken();
-
-
-   const items = [
-      {
-         key: "1",
-         label: (
-            <Link to='/shoes-mens' >
-               Shoes
-            </Link>
-         )
-      },
-      {
-         key: "2",
-         label: (
-            <Link to='/jacket-vest'>
-               JacketVests
-            </Link>
-         )
-      },
-      {
-         key: "3",
-         label: (
-            <Link to='/hoodies-sweatshirts'>
-               Hoodies && Sweatshirts
-            </Link>
-         )
-      },
-      {
-         key: "4",
-         label: (
-            <Link to='/short-men'>
-               Shorts
-            </Link>
-         )
-      },
-      {
-         key: "5",
-         label: (
-            <Link to='/socks'>
-               Socks
-            </Link>
-         )
-      }
-   ];
-
    const contentStyle = {
       backgroundColor: token.colorBgElevated,
       borderRadius: token.borderRadiusLG,
@@ -76,9 +78,9 @@ const MensMenu = () => {
                      />
                   </div>
                )}>
-               <Link to='/mens'>
-                  <Space>Mens</Space>
-               </Link>
+               {/* <Link to='/mens'> */}
+                  <Space style={{fontSize: 18 , fontWeight: 400, }}>Mens</Space>
+               {/* </Link> */}
             </Dropdown>
    );
 };

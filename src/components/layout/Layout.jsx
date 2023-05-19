@@ -40,10 +40,14 @@ const Layout = () => {
                         <div className="link">
                            <ul className="controlLink">
                               <li>
-                                 <Link to='/mens'><MensMenu /></Link>
+                                 <Link to='/mens'>
+                                    <MensMenu />
+                                 </Link>
                               </li>
                               <li>
-                                 <Link to='/womens'><WomensMenu /></Link>
+                                 <Link to='/womens'>
+                                    <WomensMenu />
+                                 </Link>
                               </li>
                               <li>
                                  <Link to='/kids'>
@@ -55,9 +59,9 @@ const Layout = () => {
                                     <BiShoppingBag style={{ fontSize: 24 }} />
                                  </Link>
                               </li>
-                              <div>
+                              <li>
                                  <Search/>
-                              </div>
+                              </li>
                            </ul>
                         </div>
                      </div>
@@ -66,7 +70,7 @@ const Layout = () => {
             </header>
             <main>
                <div className="container">
-                  <Outlet />
+                  <Outlet/>
                </div>
             </main>
             <footer style={{background: '#111111'}}>

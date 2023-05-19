@@ -12,7 +12,7 @@ let persistore = persistStore(reduxStore)
 ReactDOM.createRoot(document.getElementById("root")).render(
    <>
       <Provider store={reduxStore}>
-         <PersistGate persistor={persistore}> 
+         <PersistGate loading={null} persistor={persistore}> 
          <BrowserRouter>
             <App />
          </BrowserRouter>
