@@ -11,6 +11,7 @@ import { socksReducers } from './mens/socks/SocksSlice'
 import { womenShoesReducers } from './womens/shoes/WomenShoesSlice'
 import { SkirtsDressesReducer } from './womens/SkirtsDresses/SkirtsDressesSlice'
 import { LeggingsReducer } from './womens/leggings/LeggingsSlice'
+import { shoesKidsReducer } from './kids/shoes/ShoesSlice'
 
 
 const combineReducer = combineReducers({
@@ -25,6 +26,8 @@ const combineReducer = combineReducers({
     womensShoes: womenShoesReducers,
     SkirtsDresses: SkirtsDressesReducer,
     Leggings: LeggingsReducer,
+    // Kids
+    shoesKids: shoesKidsReducer,
     // search
     filterMansShoes: shoesMenDataFilterReducer,
     //  addToCard

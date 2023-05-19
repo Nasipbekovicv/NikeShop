@@ -31,7 +31,7 @@ const OneReaclmas = () => {
         <div>
             <div className="BlockEndHome">
                <div className="textBlockImgBlockEndBlockOne">
-                  <Link>
+                  <Link to='/jacket-vest'>
                      <img className="ImgBlockEnd" src={imgOneBlockEnd} alt="" />
                   </Link>
                   <div className="textBlockImgBlockEndOne">
@@ -40,7 +40,7 @@ const OneReaclmas = () => {
                   </div>
                </div>
                <div className="textBlockImgBlockEndBlockTwo">
-                  <Link>
+                  <Link to='/shoes-mens'>
                      <img className="ImgBlockEnd"  src={imgTwoBlockEnd} alt="" />
                   </Link>
                   <div className="textBlockImgBlockEndTwo">
@@ -49,7 +49,7 @@ const OneReaclmas = () => {
                   </div>
                </div>
                <div className="textBlockImgBlockEndBlockTre">
-                  <Link>
+                  <Link to='/shoesKids'>
                      <img className="ImgBlockEnd"  src={imgTreBlockEnd} alt="" />
                   </Link>
                   <div className="textBlockImgBlockEndTre">

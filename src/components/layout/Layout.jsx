@@ -74,12 +74,12 @@ const Layout = () => {
                   <div className="footer">
                      <div className="footerControl">
                         <div style={{display: 'flex', columnGap: '350px'}}>
-                           <div> <h4>About</h4> </div>
+                           {/* <div> <h4>About</h4> </div>
                            <div><h4>Get Help</h4></div>
-                           <div><h4>About Nike</h4></div>
+                           <div><h4>About Nike</h4></div> */}
                         </div>
                         <div>
-                           <MdOutlineLocationOn/>
+                           {/* <MdOutlineLocationOn/> */}
                            <span>© {new Date().getFullYear()} Nike, Inc. All Rights Reserved</span>
                         </div>
                      </div>

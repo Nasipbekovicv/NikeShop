@@ -1,13 +1,12 @@
 import { useSelector } from 'react-redux'
-import CardShopSearch from './cardShop/CardShopSearch'
 import './ShowProducts.css'
+import CardShopSearch from './cardShop/CardShopSearch'
 
 const getItems = (st) => st.filterMansShoes.item2
 
-const ShowProducts = () => {
+  const ShowProducts = () => {
 
   const item2Arr = useSelector(getItems)
-
 
 
   return (

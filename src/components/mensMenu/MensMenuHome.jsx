@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom"
 
-const MensMenu = () => {
+const MensMenuHome = () => {
   return (
     <div>
        <div className="MenMenusHomeControl">
@@ -29,4 +29,4 @@ const MensMenu = () => {
   )
 }
 
-export default MensMenu
+export default MensMenuHome

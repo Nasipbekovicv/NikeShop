@@ -8,6 +8,7 @@ import MensHomeBlockTwoImgTwo from "../../assets/mensHome/MensHomeBlockTwoImgTwo
 import MensHomeBlockTreImg from "../../assets/mensHome/MensHomeBlockTreImg.jpg";
 import OneReaclmas from "../../components/reclams/OneReaclmas";
 import MensMenu from "../../components/mensMenu/MensMenuHome";
+import { Link } from "react-router-dom";
 
 const Mens = () => {
    return (
@@ -29,10 +30,12 @@ const Mens = () => {
                         Highlight any fit with the eye-catching design of the{" "}
                         <br /> Air Max TW and more.
                      </p>
+                     <Link to='/jacket-vest'>
                      <Buttons
                         style={{ padding: "20px 20px", fontSize: "24px" }}
                         title="Shop"
                      />
+                     </Link>
                   </div>
                </div>
                <div className="MensHomeBlockTwo">
@@ -43,7 +46,9 @@ const Mens = () => {
                         <div className="MensHomeBlockTwoImgOneText">
                            <p>Nike Running</p>
                            <h3>The New Nike Pegasus 40</h3>
+                           <Link to='/shoes-mens'>
                            <Buttons title="Shop" />
+                           </Link>
                         </div>
                      </div>
                      <div className="MensHomeBlockTwoImgTwo">
@@ -51,7 +56,9 @@ const Mens = () => {
                         <div className="MensHomeBlockTwoImgTwoText">
                            <p>Nike Backetball</p>
                            <h3>G.T. Cut 2</h3>
+                           <Link to='/shoes-womens'>
                            <Buttons title="Shop" />
+                           </Link>
                         </div>
                      </div>
                   </div>
@@ -69,9 +76,15 @@ const Mens = () => {
                      <h3>EVERY DAYS LEG DAY</h3>
                      <p>Shorts in all the lengths-find yours.</p>
                      <div className="MensHomeBlockTreTextButtons">
+                        <Link to='/short-men'>
                         <Buttons title="Shop Upper-Thigh Length Shorts" />
+                        </Link>
+                        <Link to='/short-men'>
                         <Buttons title="Shop Mid-Thigh Length Shorts" />
+                        </Link>
+                        <Link to='/short-men'>
                         <Buttons title="Shop Knee Length Shorts" />
+                        </Link>
                      </div>
                   </div>
                </div>

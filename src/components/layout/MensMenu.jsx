@@ -1,10 +1,10 @@
 import { Link } from "react-router-dom";
-
-import { cloneElement } from "react";
-// import { DownOutlined } from "@ant-design/icons";
 import { Divider, Dropdown, Space, theme } from "antd";
+import { cloneElement } from "react";
 const MensMenu = () => {
    const { useToken } = theme;
+   const { token } = useToken();
+
 
    const items = [
       {
@@ -49,18 +49,18 @@ const MensMenu = () => {
       }
    ];
 
-   const { token } = useToken();
    const contentStyle = {
       backgroundColor: token.colorBgElevated,
       borderRadius: token.borderRadiusLG,
       boxShadow: token.boxShadowSecondary
    };
+
    const menuStyle = {
       boxShadow: "none"
    };
    return (
       <div>
-         <Link >
+       
             <Dropdown
                menu={{
                   items
@@ -82,7 +82,7 @@ const MensMenu = () => {
                   <Space>Mens</Space>
                </Link>
             </Dropdown>
-         </Link>
+       
       </div>
    );
 };

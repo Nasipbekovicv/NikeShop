@@ -20,16 +20,16 @@ const cardShopSlice = createSlice({
 
         },
         increment: (state, action) => {
-            const finIndIncre = state.CardItems.map(el => {
+            state.CardItems = state.CardItems.map(el => {
                 if (el.id === action.payload) {
                     return {...el, count: el.count -= 1 }
                 }
                 return el
-            })
+            }).filter(e => e.count !== 0)
 
         },
         decrement: (state, action) => {
-            const finIndIncre = state.CardItems.map(el => {
+            state.CardItems = state.CardItems.map(el => {
                 if (el.id === action.payload) {
                     return {...el, count: el.count += 1 }
                 }

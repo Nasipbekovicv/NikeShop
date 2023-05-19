@@ -34,27 +34,102 @@
     
     .kidsBlockTwoHome {
         display: flex;
+        gap: 20px;
+    }
+    
+    .kidsBlockTwoImgOne {
         position: relative;
     }
     
-    .kidsImg1BlockTwo img {
-        width: 800px;
+    .imgBlockTwoKids {
+        width: 710px;
     }
     
-    .kidsImg2BlockTwo img {
-        width: 800px;
-        clip-path: inset(0% 0% 28% 0%);
-    }
-    
-    .kidsImg3BlockTwo img {
-        width: 800px;
-    }
-    
-    .kidsImg4BlockTwo img {
-        /* width: 1200px; */
-        -webkit-clip-path: inset(0% 0% 0% 30%);
-        clip-path: inset(0% 0% 0% 30%);
-        object-fit: cover;
+    .kidsBlockOneTitleImgOne {
         position: absolute;
-        left: 0;
+        bottom: 140px;
+        left: 40px;
+    }
+    
+    .kidsBlockOneTitleImgOne {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kidsBlockOneTitleImgOne p {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .kidsBlockOneTitleImgOne h3 {
+        font-size: 28px;
+        color: white;
+    }
+    
+    .kidsBlockOneTitleImgOne button {
+        font-size: 20px;
+        font-weight: 500;
+        background: white;
+        color: black;
+        padding: 18px 20px;
+    }
+    
+    .kidsBlockTwoImgTwo {
+        position: relative;
+    }
+    
+    .kidsBlockTwoTitleImgTwo {
+        position: absolute;
+        bottom: 140px;
+        left: 40px;
+    }
+    
+    .kidsBlockTwoTitleImgTwo {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .kidsBlockTwoTitleImgTwo p {
+        font-size: 16px;
+        color: white;
+        font-weight: 500;
+    }
+    
+    .kidsBlockTwoTitleImgTwo h3 {
+        font-size: 28px;
+        color: white;
+    }
+    
+    .kidsBlockTwoTitleImgTwo button {
+        font-size: 20px;
+        font-weight: 500;
+        background: white;
+        color: black;
+        padding: 18px 20px;
+    }
+    /*            ==================             =      ==          =   = =  */
+    
+    .imgBlockTreeKids {
+        width: 1440px;
+    }
+    
+    .kidsBlockTreeTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        row-gap: 10px;
+    }
+    
+    .kidsBlockTreeTitle h3 {
+        font-size: 72px;
+    }
+    
+    .kidsBlockTreeTitle button {
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: 600;
     }

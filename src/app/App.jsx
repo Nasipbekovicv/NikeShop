@@ -4,20 +4,21 @@ import MiniCards from '../components/cards/miniCards/MiniCards'
 import Layout from '../components/layout/Layout'
 import ShowProducts from '../components/show-product/ShowProducts'
 import Home from '../pages/home/Home'
+import Kids from '../pages/kids/Kids'
+import ShoesKids from '../pages/kids/shoes/ShoesKids'
 import HoodiesSweatshirts from '../pages/mens/HoodiesSweatshirts/HoodiesSweatshirts'
 import JacketVests from '../pages/mens/JacketVests/JacketVests'
 import Mens from '../pages/mens/Mens'
 import ShoesMans from '../pages/mens/shoes/ShoesMans'
-import './App.css'
-import AddToCard from '../pages/toCardAdd/AddToCard'
 import Shorts from '../pages/mens/shorts/Shorts'
 import Socks from '../pages/mens/socks/Socks'
+import AddToCard from '../pages/toCardAdd/AddToCard'
 import Womens from '../pages/womens/Womens'
-import ShoesWomen from '../pages/womens/shoesWomen/ShoesWomen'
 import Leggings from '../pages/womens/leggings/Leggings'
+import ShoesWomen from '../pages/womens/shoesWomen/ShoesWomen'
 import SkirtsDresses from '../pages/womens/skirtsDresses/SkirtsDresses'
 import WomenSocks from '../pages/womens/socks/WomenSocks'
-import Kids from '../pages/kids/Kids'
+import './App.css'
 
 const getItems = (st) => st.filterMansShoes.item2 // [1,2]
 
@@ -51,7 +52,9 @@ const App = () => {
            <Route path='/skirts-dresses' element={<SkirtsDresses/>} />
            <Route path='/women-socks' element={<WomenSocks/>} />
 
+
            <Route path='/kids' element={<Kids/>} />
+           <Route path='/shoesKids' element={<ShoesKids/>}  />
         </Route>
       </Routes>
     </div>

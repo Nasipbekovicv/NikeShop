@@ -68,7 +68,7 @@ const MiniCards = () => {
             </div>
          </div>
          <div>
-            <Comments />
+            {/* <Comments /> */}
          </div>
          <ToastContainer />
       </div>

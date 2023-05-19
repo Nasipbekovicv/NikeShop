@@ -3,23 +3,9 @@
     height: 30px;
     border-radius: 5px;
     border: white solid(1px);
-    /* border-color: rgb(0, 183, 255); */
     border-style: none;
     background: rgba(255, 255, 255, 0.477);
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
     -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
     -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
 }
-
-
-/* .inputClass {
-    width: 250px;
-    height: 30px;
-    padding-left: 5px;
-    border-radius: 5px;
-    border-style: none;
-    background: rgba(212, 212, 212, 0.774);
-    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.75);
-    -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
-    -moz-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.35);
-} */

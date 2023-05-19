@@ -12,12 +12,12 @@ const Comments = () => {
 
    const [come , setCome] = useState('')
 
-  const comts = useSelector(st => st.comments)
-  const dicpatch = useDispatch()
+//   const comts = useSelector(st => st.comments)
+  const dispatch = useDispatch()
 
   const change = (e) => {
    e.preventDefault(),
-   setCome(dicpatch(actions.commentsFunc(e.target.value)))
+   setCome(dicpatch(actions.commentsFunc()))
   }
 
 
@@ -30,16 +30,16 @@ const Comments = () => {
                <div className='contrlInputAndBtnComments'>
                <div style={{padding: '10px 0px'}}>
                   <p>Comments Products</p>
-                  <input onChange={change} className='comments' type="text" placeholder='comments' />
+                  <input value={setCome} onChange={change} className='comments' type="text" placeholder='comments' />
                </div>
                <div style={{padding: '10px 0'}}>
-                  <Buttons onClick={() => come} title='add comments' />
+                  <Buttons onClick={() => dispatch(actions.commentsFunc(setCome))} title='add comments' />
                </div>
                </div>
             </div>
          </div>
          <div className='controlComments'>
-            {/* {comts} */}
+            {come}
          </div>
       </div>
       </>

@@ -8,7 +8,7 @@ const commentsSlice = createSlice({
     },
     reducers: {
         commentsFunc: (state, action) => {
-            state.item.push(action.payload)
+            state.item.push('', action.payload)
         }
     }
 })

@@ -1,14 +1,16 @@
 import { Link } from "react-router-dom"
 
-const WomensMenu = () => {
+const KidsMenu = () => {
   return (
     <div>
        <div className="MenMenusHomeControl">
+         <Link to='/kids'>
                   <h3>Kids</h3>
+         </Link>
                   <div>
                      <ul className="MenMenusHome">
                         <li>
-                           <Link to=''>Shoes</Link>
+                           <Link to='/shoesKids'>Shoes</Link>
                         </li>
                         <li>
                            <Link to='' >Clothing</Link>
@@ -27,4 +29,4 @@ const WomensMenu = () => {
   )
 }
 
-export default WomensMenu
+export default KidsMenu

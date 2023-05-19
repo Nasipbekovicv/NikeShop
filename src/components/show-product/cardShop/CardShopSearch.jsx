@@ -13,9 +13,11 @@ const CardShopSearch = (props) => {
       dispatch(actions.clearItem2())
    }
 
+   
+
   return (
     <div>
-      <div className='controlBlockImgSearch'>
+      <div style={{cursor: 'pointer'}} className='controlBlockImgSearch'>
         <div className='blockImgSearch' onClick={() => goDetailPage(props.productsId)}>
           <img className='imgSearch' src={props.items.img} alt="" />
           <div>

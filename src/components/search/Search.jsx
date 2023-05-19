@@ -1,6 +1,5 @@
 
 import { Input } from "antd";
-import { useEffect } from "react";
 import { useDispatch } from "react-redux";
 import { actions } from "../../redux/search/SearchSlice";
 import './Search.css'
@@ -20,19 +19,15 @@ const Search = () => {
       }
    }
 
-   useEffect(() => {
-   },[dispatch])
-
    return (
       <div>
-         {/* <Search
-         onChange={change}
-            placeholder="input search text"
-            allowClear
-            enterButton="Search"
-            size="middle"
-         /> */}
-         <input className={` inputClass`} type="text" onChange={change} />
+         <Search
+      placeholder="input search text"
+      onChange={change}
+      style={{
+        width: 400,
+      }}
+    />
       </div>
    )
 }
