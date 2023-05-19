@@ -1,7 +1,6 @@
 import { Card } from 'antd';
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import Buttons from "../button/Buttons";
 import "./Cards.css";
 
 import { actions } from '../../redux/search/SearchSlice';

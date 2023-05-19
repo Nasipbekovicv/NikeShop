@@ -1,6 +1,5 @@
 
-
-
+import React from 'react'
 import './Reclams.css'
 
 const Reclams = () => {

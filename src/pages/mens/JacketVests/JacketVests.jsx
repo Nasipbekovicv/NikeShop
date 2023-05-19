@@ -1,7 +1,5 @@
 import { useSelector } from "react-redux";
 import Cards from "../../../components/cards/Cards";
-import '../../Cart.css'
-import Reclams from "../../../components/reklams/Reclams";
 import MensMenu from "../../../components/mensMenu/MensMenuHome";
 
 const JacketVests = () => {
@@ -13,7 +11,6 @@ const JacketVests = () => {
         <div>
           <MensMenu/>
         </div>
-        <Reclams/>
         <div>
           <h3 style={{padding: '20px 0 0 350px', fontSize: 110}}>JacketVests</h3>
         </div>

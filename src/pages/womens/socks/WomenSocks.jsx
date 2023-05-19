@@ -1,7 +1,6 @@
 
-import Cards from '../../../components/cards/Cards'
-import MensMenu from '../../../components/mensMenu/MensMenuHome'
 import { useSelector } from "react-redux"
+import Cards from '../../../components/cards/Cards'
 import WomensMenu from '../../../components/womensMenu/womensMenuHome'
 
 const WomenSocks = () => {

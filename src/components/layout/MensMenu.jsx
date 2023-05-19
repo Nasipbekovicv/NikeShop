@@ -59,8 +59,6 @@ const MensMenu = () => {
       boxShadow: "none"
    };
    return (
-      <div>
-       
             <Dropdown
                menu={{
                   items
@@ -82,8 +80,6 @@ const MensMenu = () => {
                   <Space>Mens</Space>
                </Link>
             </Dropdown>
-       
-      </div>
    );
 };
 
