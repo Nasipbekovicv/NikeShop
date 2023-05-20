@@ -5,7 +5,6 @@ import { JacketVestsReducer } from './mens/JacketVests/JacketVestsSlice'
 import { HoodiesSweatshirtsReducer } from './mens/HoodiesSweatshirts/HoodiesSweatshirtsSlice'
 import { shoesMenDataFilterReducer } from './search/SearchSlice'
 import { cardShopReducer } from './cardShop/CardShopSlice'
-import { commentReaducer } from './comments/CommentsSlice'
 import { ShortsReduce } from './mens/shorts/ShortsSlice'
 import { socksReducers } from './mens/socks/SocksSlice'
 import { womenShoesReducers } from './womens/shoes/WomenShoesSlice'
@@ -14,12 +13,20 @@ import { LeggingsReducer } from './womens/leggings/LeggingsSlice'
 import { shoesKidsReducer } from './kids/shoes/ShoesSlice'
 import { persistReducer } from 'redux-persist'
 import storage from 'redux-persist/lib/storage'
+import hardSet from 'redux-persist/es/stateReconciler/hardSet'
 
 
 const persistConfig = {
     key: 'root',
-    storage,
+    storage: storage,
+    stateReconciler: hardSet,
+    blacklist: ['somethingTemporary']
 }
+
+
+const onRehydrate = () => {
+    store.dispatch({ type: 'SOME_ACTION' });
+};
 
 
 const combineReducer = combineReducers({
@@ -40,14 +47,12 @@ const combineReducer = combineReducers({
     filterMansShoes: shoesMenDataFilterReducer,
     //  addToCard
     addToCard: cardShopReducer,
-    // comments
-    comments: commentReaducer,
 })
 
-const persistedReducer = persistReducer(persistConfig, combineReducer)
+const persistedReducer = persistReducer(persistConfig, combineReducer, onRehydrate)
 
 const store = configureStore({
-    reducer: persistedReducer,
+    reducer: persistedReducer
 
 })
 
