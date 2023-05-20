@@ -1,9 +1,8 @@
 import { Card } from 'antd';
 import { useDispatch } from "react-redux";
 import { useNavigate } from "react-router";
-import "./Cards.css";
-
 import { actions } from '../../redux/search/SearchSlice';
+import "./Cards.css";
 const { Meta } = Card;
 
 const Cards = props => {
@@ -14,7 +13,6 @@ const Cards = props => {
       navigation(`/mini-cards/${id}`)
       dispatch(actions.clearItem2())
    }
-
 
    return (
       <div>

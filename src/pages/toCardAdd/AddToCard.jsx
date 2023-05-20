@@ -1,9 +1,8 @@
 
-import './AddToCard.css'
-import { actions } from '../../redux/cardShop/CardShopSlice'
 import { useDispatch, useSelector } from "react-redux"
-
 import Buttons from '../../components/button/Buttons'
+import { actions } from '../../redux/cardShop/CardShopSlice'
+import './AddToCard.css'
 
 const AddToCard = () => {
   const toComeCard = useSelector(st => st.addToCard.CardItems)

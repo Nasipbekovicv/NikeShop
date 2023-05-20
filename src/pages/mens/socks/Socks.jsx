@@ -1,10 +1,9 @@
 
+import { useSelector } from "react-redux"
 import Cards from '../../../components/cards/Cards'
 import MensMenu from '../../../components/mensMenu/MensMenuHome'
-import { useSelector } from "react-redux"
 
 const Socks = () => {
-
    const socksData = useSelector(st => st.socks)
 
   return (

@@ -28,32 +28,31 @@ const App = () => {
 
   return (
     <div>
-       
       {item2Arr?.length > 0 ?   <ShowProducts />  : null}
-
-      <Routes>
-        <Route path='/' element={<Layout />}>
-          <Route index element={<Home />} />
-          <Route path='/addCome' element={<AddToCard/>} /> 
-
-          <Route path='/mens' element={<Mens />}/>
-          <Route path='/shoes-mens' element={<ShoesMans />} />
-          <Route path='/jacket-vest' element={<JacketVests />} />
-          <Route path="/mini-cards/:id" element={<MiniCards id={1235}/>} />
-          <Route path='/hoodies-sweatshirts' element={<HoodiesSweatshirts />} />
-          <Route path='/short-men' element={<Shorts />} />
-          <Route path='/socks' element={<Socks/>} />
-
-          <Route path='/womens' element={<Womens/>}/>
-           <Route path='/shoes-womens' element={<ShoesWomen/>}/> 
-           <Route path='/leggings'  element={<Leggings/>} />
-           <Route path='/skirts-dresses' element={<SkirtsDresses/>} />
-           <Route path='/women-socks' element={<WomenSocks/>} />
-
-           <Route path='/kids' element={<Kids/>} />
-           <Route path='/shoesKids' element={<ShoesKids/>}  />
-        </Route>
-      </Routes>
+        <Routes>
+          <Route path='/' element={<Layout />}>
+            <Route index element={<Home />} />
+            {/* Mens */}
+            <Route path='/mens' element={<Mens />}/>
+            <Route path='/shoes-mens' element={<ShoesMans />} />
+            <Route path='/jacket-vest' element={<JacketVests />} />
+            <Route path='/hoodies-sweatshirts' element={<HoodiesSweatshirts />} />
+            <Route path='/short-men' element={<Shorts/>} />
+            <Route path='/socks' element={<Socks/>}/>
+            {/* Womens */}
+            <Route path='/womens' element={<Womens/>}/>
+            <Route path='/shoes-womens' element={<ShoesWomen/>}/> 
+            <Route path='/leggings'  element={<Leggings/>} />
+            <Route path='/skirts-dresses' element={<SkirtsDresses/>} />
+            <Route path='/women-socks' element={<WomenSocks/>} />
+              {/* Kids */}
+            <Route path='/kids' element={<Kids/>} />
+            <Route path='/shoesKids' element={<ShoesKids/>}  />
+            {/* cards */}
+            <Route path="/mini-cards/:id" element={<MiniCards id={1235}/>} />
+            <Route path='/addCome' element={<AddToCard/>} /> 
+          </Route>
+        </Routes>
     </div>
   )
 }

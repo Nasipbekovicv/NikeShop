@@ -1,13 +1,8 @@
-
-
-import { useSelector } from 'react-redux'
-import Cards from '../../../components/cards/Cards'
+import { useSelector } from 'react-redux';
+import Cards from '../../../components/cards/Cards';
 import MensMenu from '../../../components/mensMenu/MensMenuHome';
 
-
-
 const HoodiesSweatshirts = () => {
-
    const HoodiesSweatshirtsData = useSelector(state => state.HoodiesSweatshirts)
    return (
       <div>
@@ -20,7 +15,6 @@ const HoodiesSweatshirts = () => {
       <div className='controlCart'>
          {HoodiesSweatshirtsData.map(el => (
             <Cards key={el.id} productsId={el.id} items={el} />
-
          ))}
       </div>
       </div>

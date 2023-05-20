@@ -69,9 +69,9 @@ const Layout = () => {
                </div>
             </header>
             <main>
-               {/* <div className="container"> */}
+               <div className="container">
                   <Outlet/>
-               {/* </div> */}
+               </div>
             </main>
             <footer style={{background: '#111111'}}>
                <div className="container">

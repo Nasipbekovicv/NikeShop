@@ -1,10 +1,9 @@
 
+import { useSelector } from "react-redux";
+import Cards from '../../../components/cards/Cards';
 import MensMenu from "../../../components/mensMenu/MensMenuHome";
-import { useSelector } from "react-redux"
-import Cards from '../../../components/cards/Cards'
 
 const Shorts = () => {
-
    const shortsData = useSelector(st => st.shorts)
 
   return (
@@ -13,7 +12,6 @@ const Shorts = () => {
      <div>
        <MensMenu/>
      </div>
-     {/* <Reclams/> */}
      <div>
        <h3 style={{padding: '20px 0 0 500px', fontSize: 110}}>Shorts</h3>
      </div>
