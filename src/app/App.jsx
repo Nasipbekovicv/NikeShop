@@ -20,13 +20,11 @@ import SkirtsDresses from '../pages/womens/skirtsDresses/SkirtsDresses'
 import WomenSocks from '../pages/womens/socks/WomenSocks'
 import './App.css'
 
-const getItems = (st) => st.filterMansShoes.item2 // [1,2]
+const getItems = (st) => st.filterMansShoes.item2  // [1,2]
 
 
 const App = () => {
   const item2Arr = useSelector(getItems)
-
-  console.log(item2Arr,'-----');
 
   return (
     <div>
@@ -38,10 +36,10 @@ const App = () => {
           <Route index element={<Home />} />
           <Route path='/addCome' element={<AddToCard/>} /> 
 
-          <Route path='/mens' element={<Mens />}></Route>
+          <Route path='/mens' element={<Mens />}/>
           <Route path='/shoes-mens' element={<ShoesMans />} />
           <Route path='/jacket-vest' element={<JacketVests />} />
-          <Route path="/mini-cards/:id" element={<MiniCards />} />
+          <Route path="/mini-cards/:id" element={<MiniCards id={1235}/>} />
           <Route path='/hoodies-sweatshirts' element={<HoodiesSweatshirts />} />
           <Route path='/short-men' element={<Shorts />} />
           <Route path='/socks' element={<Socks/>} />
@@ -51,7 +49,6 @@ const App = () => {
            <Route path='/leggings'  element={<Leggings/>} />
            <Route path='/skirts-dresses' element={<SkirtsDresses/>} />
            <Route path='/women-socks' element={<WomenSocks/>} />
-
 
            <Route path='/kids' element={<Kids/>} />
            <Route path='/shoesKids' element={<ShoesKids/>}  />

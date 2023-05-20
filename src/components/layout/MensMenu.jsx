@@ -78,9 +78,9 @@ const MensMenu = () => {
                      />
                   </div>
                )}>
-               {/* <Link to='/mens'> */}
+        
                   <Space style={{fontSize: 18 , fontWeight: 400, }}>Mens</Space>
-               {/* </Link> */}
+            
             </Dropdown>
    );
 };

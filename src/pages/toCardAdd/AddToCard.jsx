@@ -10,6 +10,8 @@ const AddToCard = () => {
   const allPrice = toComeCard.reduce((e, i) => e += i.price * i.count, 0)
   const allCount = toComeCard.reduce((e, i) => e += i.count , 0)
 
+  const dispatch = useDispatch()
+
   const buyCart = () => {
     return(
       <div>
@@ -45,7 +47,7 @@ const AddToCard = () => {
     )
   }
 
-  const dispatch = useDispatch()
+ 
 
   return (
     <div style={{ margin: '50px 0', display: 'flex', justifyContent: 'space-between' }}>

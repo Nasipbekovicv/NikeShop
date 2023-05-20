@@ -4,11 +4,10 @@ import { useNavigate } from "react-router";
 import "./Cards.css";
 
 import { actions } from '../../redux/search/SearchSlice';
+const { Meta } = Card;
 
 const Cards = props => {
-   const { Meta } = Card;
    const navigation = useNavigate();
-
    const dispatch = useDispatch()
 
    const goDetailPage = (id) => {
@@ -34,7 +33,6 @@ const Cards = props => {
                </div>
                <div>
                   <h3>${props.items.price}</h3>
-            {/* <Buttons className="textCardsPrice" title={`$ ${props.items.price}`} /> */}
                </div>
             </div>
          </Card>
