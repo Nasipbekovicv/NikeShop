@@ -44,7 +44,6 @@ const Kids = () => {
          </div>
          </div>
 
-
          <div className='kidsBlockTree'>
             <h3 style={{fontWeight: 600, fontSize: 20}} >Best of Air Max</h3>
             <div className="kidsBlockTreeImg">

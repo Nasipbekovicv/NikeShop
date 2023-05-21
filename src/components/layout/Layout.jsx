@@ -6,11 +6,9 @@ import KidsMenu from "./KidsMenu";
 import MensMenu from "./MensMenu";
 import WomensMenu from "./WomensMenu";
 
-// import { MdOutlineLocationOn } from 'react-icons/md';
 
 const Layout = () => {
    
-
    return (
       <div className="">
          <div>
@@ -78,12 +76,8 @@ const Layout = () => {
                   <div className="footer">
                      <div className="footerControl">
                         <div style={{display: 'flex', columnGap: '350px'}}>
-                           {/* <div> <h4>About</h4> </div>
-                           <div><h4>Get Help</h4></div>
-                           <div><h4>About Nike</h4></div> */}
                         </div>
                         <div>
-                           {/* <MdOutlineLocationOn/> */}
                            <span>© {new Date().getFullYear()} Nike, Inc. All Rights Reserved</span>
                         </div>
                      </div>

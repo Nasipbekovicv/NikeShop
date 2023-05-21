@@ -4,8 +4,8 @@ import Cards from "../../../components/cards/Cards"
 import KidsMenu from '../../../components/kids-menu/KidsMenu'
 
 const ShoesKids = () => {
-
-   const shoes = useSelector(st => st.shoesKids)
+  
+  const shoes = useSelector(st => st.shoesKids)
 
   return (
    <>

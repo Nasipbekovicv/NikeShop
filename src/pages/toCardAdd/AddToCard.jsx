@@ -46,8 +46,6 @@ const AddToCard = () => {
     )
   }
 
- 
-
   return (
     <div style={{ margin: '50px 0', display: 'flex', justifyContent: 'space-between' }}>
       <div>
